@@ -1,8 +1,12 @@
+body{
+    overflow-x: hidden;
+}
 #header{
     height:45px;
+    width: auto;
+    /* width: 800px; */
     margin-top: 1%;
     margin :14px 14px 14px 14px;
-    
 }
 #logo{
     position: relative;
@@ -12,13 +16,13 @@
     height: 25px;
     width: 25px;
     position: relative;
-    left:70px;
+    left:85px;
 }
 #sear{
     width: 800px;
     border-style: hidden;
     position: relative;
-    left:70px;
+    left:85px;
 }
 #notifi{
     position: relative;
@@ -27,14 +31,17 @@
 #pp{
     position: relative;
     left:240px;
+    top:7px
 }
 #un{
     position:relative;
     left:245px;
+    bottom: 9px;
 }
 #arrow{
     position:relative;
     left:255px;
+    bottom: 4px;
 }
 
 #sidebar{
@@ -48,9 +55,207 @@
     width: 25px;
     margin: 10px 10px 10px 10px;
 }
+.lbl{
+    position: relative;
+}
 #active{
-    width: 225px;
+    width: 175px;
     background-color: #FFF3F4;
     color:#C8242F;
-     
+}
+#maincon{
+    display: flex;
+}
+.dash{
+    margin-top:30px;
+    margin-left: 40px;
+    font-size: 25px;
+}
+.dashboard{
+    background-color: #fafafa;
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 100%;
+    height:1200px;
+}
+.fivebox{
+    display: flex;
+}
+.allbox{
+    background-color: #ffffff;
+    display: flex;
+    margin-top: 15px;
+    margin-left: 23px;
+    width: 219px;
+    height: 116px;
+}
+.boxicon{
+    height:33px;
+    width:33px;
+    margin: auto auto;
+}
+.no{
+    font-size: 20px;
+    margin: auto auto;
+}
+.graph{
+    margin-top: 30px;
+    background-color: #ffffff;
+    margin-top: 33px;
+    margin-left: 26px;
+    width: 802px;
+    height: 400px;
+}
+.sale{
+    position: relative;
+    top:15px;
+    left:30px;
+}
+.weekly{
+    position: relative;
+    left:525px;
+    bottom: 25px;
+    color: #adadad;
+}
+.monthly{
+    position: relative;
+    left:614px;
+    bottom:60px;
+    color: #adadad;
+}
+.yearly{
+    position: relative;
+    left:717px;
+    bottom:95px;
+    color:#C8242F;
+    text-decoration: underline;
+}
+.imggraph{
+    width: 730px;
+    height: 275px;
+    margin-left: 30px;
+    margin-top: -70px;
+}
+.piecon{
+    width: 365px;
+    height: 398px;
+    background-color: #ffffff;
+    margin-top: -399px;
+    margin-left: 850px;
+}
+.pie{
+    position: relative;
+    left: 70px;
+    top:30px;
+}
+.salebyc{
+    position: relative;
+    top:20px;
+    left:20px;
+}
+.red{
+    font-size: 45px;
+    color:#C8242F;
+    position: relative;
+    top:0px;
+    left:40px;
+
+}
+.green{
+    font-size: 45px;
+    color: #A2B86C;
+    position: relative;
+    top: -86px;
+    left:250px;   
+}
+.orange{
+    color:#F16C20;
+    font-size: 45px;
+    position: relative;
+    top:-136px;
+    left:39px;
+}
+.yellow{
+    color: #EBC844;
+    font-size: 45px;
+    position: relative;
+    top:-224px;
+    left:250px;
+}
+.color1{
+    font-size: 15px;
+    color: #3E3E3E;
+    position: relative;
+    top:-38px;
+    left:68px;
+}
+.color2{
+    font-size: 15px;
+    color: #3E3E3E;
+    position: relative;
+    top:-125px;
+    left:277px;
+}
+.color3{
+    font-size: 15px;
+    color: #3E3E3E;
+    position: relative;
+    left:67px;
+    top:-174px;
+}
+.color4{
+    font-size: 15px;
+    color: #3E3E3E;
+    position: relative;
+    top:-260px;
+    left:280px;
+}
+.footer{
+    width: 1190px;
+    height: 912px;
+    background-color:#ffffff;
+    margin-left: 28px;
+    margin-top: 31px;
+    display: flex;
+}
+.invoices{
+    position: relative;
+    left:25px;
+    top:5px;
+
+}
+
+.invoice-info{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.invoice-info span{
+    font-size: 22px;
+}
+
+.invoice-info p{
+    margin-left: auto;
+    font-size: 12px;
+    margin-right: 20px;
+    color: red;
+}
+.table1{
+    
+    margin-left: 20px;
+    background-color:white;
+}
+.paid{
+    color: #3CDD5F;
+    background-color:#EBFFEF;
+}
+.pending{
+    color: #BABABA;
+    background-color: #F8F8F8;
+}
+.failed{
+    
+    color: #FF4545;
+    background-color: #FFF5F5;
 }
