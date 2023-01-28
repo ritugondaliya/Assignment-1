@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/innerpage.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <img src="images\menu-bar.svg" alt="menu" id="menu"/>
+        <img src="images\header-logo.svg" alt="logo" id="logo"/>
+        <img src="images\search-icon.svg" alt="searchIcon" id="search">
+        <input id="sear" placeholder="Search.."></input>
+        <img src="images\notification-icon.svg" alt="notification" id="notifi"/>
+        <img src="images\profile.png" alt="profile pic" id="pp">
+        <label id="un">john doe</label>
+        <img src="images\downward-arrow.svg" alt="downward arrow" id="arrow"/>
+    </div>
+
+
+    <div class="maincontent">
+
+        <div class="sidebar">
+            <div>
+                <img src="/images/dashboard-active.svg" alt="img" class="icon"/>
+                <label class="lbl">Dashboard</label>
+            </div>
+            <div id="active">
+                <img src="/images/graph-default.svg" alt="img" class="icon"/>
+                <label class="lbl">Analysis</label>
+            </div>
+            <div>
+                <img src="/images/inbox-default.svg" alt="img" class="icon"/>
+                <label class="lbl">Inbox</label>
+            </div>
+            <div>
+                <img src="/images/clock-default.svg" alt="img" class="icon"/>
+                <label class="lbl">History</label>
+            </div>
+            <div>
+                <img src="/images/user-default.svg" alt="img" class="icon"/>
+                <label class="lbl">User</label>
+            </div>
+            <div>
+                <img src="/images/maintenance-default.svg" alt="img" class="icon"/>
+                <label class="lbl">Maintenance</label>
+            </div>
+            <div>
+                <img src="images/setting-default.svg" alt="img" class="icon"/>
+                <label class="lbl">Setting</label>
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="analysis">Analysis</div>
+            <div class="form1">
+                <p class="oneclm">One Column</p>
+                <input type="text" placeholder="  Name" class="name">
+                <select class="dropd" id="dropdown">
+                    <option>Dropdown</option>
+                    <option>a</option>
+                    <option>b</option>
+                    <option>c</option>
+                    <option>d</option>
+                 </select>
+                 <textarea class="multipleline" id="textarea" rows="3" 
+                 placeholder="Multiple Lines"></textarea>
+                <!-- <input type="text" placeholder="  Description" class="description">
+                <input type="text" placeholder="  Multiple Line" class="multipleline"> -->
+
+                <p class="twoclm">Two Column</p>
+                <div class="twocol1">
+                    <input type="text" placeholder="  Name" class="name1">
+                    <fieldset>
+                        <legend><span class="legendname">Username</span></legend>
+                        johndoe
+                    </fieldset>
+                </div>
+                <div class="twocol2">
+                    <input type="text" placeholder="  Password" class="name1">
+                    <select class="dropd1" id="dropdown">
+                        <option>Dropdown</option>
+                        <option>a</option>
+                        <option>b</option>
+                        <option>c</option>
+                        <option>d</option>
+                     </select>
+                </div>
+
+                <p class="twoclm">Three Column</p>    
+                <div class="threecol">
+                    <fieldset id="focus">
+                        <legend><span class="legendname" >Focus</span></legend>
+                    </fieldset>
+                    <fieldset id="pwd">
+                        <legend><span class="legendname" >Password</span></legend>
+                        <label class="circle">......</label>
+                    </fieldset>
+                    <fieldset id="dotted">
+                        <legend><span class="legendname" >Disabled</span></legend>
+                        johndoe
+                    </fieldset>
+                </div>
+
+                <p class="twoclm">Four Column</p> 
+                <div class="threecol">
+                    <fieldset id="desg">
+                        <legend><span class="legendname" >Designation</span></legend>
+                        UI Designer
+                    </fieldset>
+                    <input type="text" class="fourcolumn2" id="fourcolumn2" 
+                    placeholder="Name"/>
+                    <fieldset id="columnuser4">
+                        <legend><span class="legendname" >Username</span></legend>
+                        johndoe
+                    </fieldset>
+                    <select class="dropdown3" id="dropdown3">
+                        <option>Dropdown</option>
+                        <option>a</option>
+                        <option>b</option>
+                    </select>
+                </div>
+
+                <div class="warnings">
+                    <p class="validdata">Enter Valid data</p>
+                    <p class="fullname">Enter your full Name as per ID</p>
+                </div>
+
+                <p class="ode">Other Design Element</p> 
+                <p class="fileupload">File Upload</p> 
+
+                <div class="upload">
+                    <div class="uploadbtn">
+                        <img src="images/cloud-upload-icon.svg" class="uploadimg">
+                        <p class="uploadtxt">Upload</p>
+                    </div>
+                    <p class="noitemselect">No item Selected</p>
+                </div>
+
+                <p class="radiobtntxt">Radio Button</p>
+                <div class="radio">
+                    <div class="radio1">
+                        <span class="radiobtnicon"></span>
+                        <p class="option1">Option1</p>
+                    </div>
+                    <div class="radio2">
+                        <span class="radiobtnicon2"></span>
+                        <img src="images/radio-checked-icon.svg" class="radiobtn2icon">
+                        <p class="option2">Option2</p>  
+                    </div> 
+                </div>
+
+                <p class="checkboxtxt">
+                    Checkbox
+                </p>
+                <div class="checkbox">
+                    <div class="checkbox1">
+                        <img src="images/check-icon.svg" class="checkbox1icon">
+                        <p class="option1chk">Option1</p>
+
+                    </div>
+                    <div class="checkbox2">
+                        <img src="images/checked-icon.svg" class="checkbox2icon">
+                        <p class="option2chk">Option2</p>  
+                    </div> 
+                </div>
+
+                <p class="snackbartxt">
+                    Snackbar
+                </p>
+                <div class="snackbar">
+                    <div class="first2">
+                        <div class="err">
+                            <img src="images/error-icon.svg" class="snackimg">
+                            <p class="errtxt">This is an error message</p>
+                        </div>
+                        <div class="info">
+                            <img src="images/info-icon.svg" class="snackimg">
+                            <p class="infotxt">This is an info message</p>
+                        </div>
+                    </div>
+                    <div class="last2">
+                        <div class="warning">
+                            <img src="images/warning-icon.svg" class="snackimg">
+                            <p class="warntxt">This is a warning message</p>
+                        </div>
+                        <div class="succ">
+                            <img src="images/success-icon.svg" class="snackimg">
+                            <p class="succtxt">This is a success message</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="call-to-action">
+                    <p class="call"> Call to action</p>
+                    <div>
+
+                        <button class="primary">Primary</button>
+                        <button class="secondary">Secondary</button>
+                    </div>
+                </div>
+
+                <div class="tablauout">
+                    <p class="tabtxt">Tabs</p>
+                    <div class="tabitems">
+                        <div class="tab1">
+                            <label class="tab1">Tab 1</label>
+                        </div>
+                        <div class="tab2">
+                            <label class="tab2">Tab 2</label>
+                        </div>
+                        <div class="tab3">
+                            <label class="tab3">Tab 3</label>
+                        </div>
+                    </div>
+                    <hr>
+                    <hr class="redline">
+                    <p class="txtbox">
+                        Lorem Ipsum is simply dummy text of the printing 
+                        and typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it to make a type specimen
+                        book. It has survived not only five centuries, but also the 
+                        leap into electronic typesetting, remaining essentially 
+                        unchanged. It was popularised in the 1960s with the release of 
+                        Letraset sheets containing
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
