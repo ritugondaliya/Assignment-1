@@ -1,100 +1,58 @@
-#img1{
-    width:300px;
-    height:300px;
-    border-radius:50%;
-    margin-top: 5%;
-    border: 10px solid #FFFFFF;
-    box-shadow: 0px 4px 31px #0000000A;
+*{
+    margin: 0;
+    padding:0;
+    background:#FAFAFA 0% 0% no-repeat padding-box;
+    font-family: Roboto;
 }
-#spa{
-    color:#C8242F;
-    font-weight: bold;
-}
-#img2{
-    width: 150px;
 
+.cont{
+    background:#FAFAFA 0% 0% no-repeat padding-box;
 }
-#p1{
-    font-size: 20px;
-    position: relative;
-    top: 10px;
+.site{
+    padding:7%;
 }
-#id1{
-    text-align:center;
-}
-#p2{
-    position: relative;
-    top: 10px;
-    font-size: small;
-    font-weight:400;
-}
-.in1{
-    position: relative;
-    top: 8px;
-    width: 240px;
-    height: 30px;
-    font-size: 8px;
-}
-.in2{
-    position: relative;
-    top:16px;
-    width: 240px;
-    height: 30px;
-    font-size: 8px; 
-}
-#div1{
-    width:300px;
-    height:300px;
+.leftimg img{
     border-radius:50%;
-    margin-left: 12%;
+    border:20px solid #FFFFFF;
+    box-shadow:0px 4px 31px #0000000A;
 }
-#div2{
-    position: relative;
-    bottom: 280px;
-    left:520px;
+span{
+    color: #C8242F;
 }
-#div3{
-    position: relative;
-    bottom:280px;
-    left:520px;
+#username{
+    top: 372px;
+    left: 907px;
+    width: 98%;
+    height: 49px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    opacity: 1;
 }
-#div{
-    margin-top: 10%;
-    height: 300px;
-    
+#password{
+    top: 448px;
+    left: 907px;
+    width: 98%;
+    height: 49px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+    border-radius: 5px;
+    opacity: 1;
 }
-#a1{
-    position: relative;
-    left:70px;
-    color: #adadad;
-    font-size: 10px;
-    text-decoration: none;
-}
-#a2{
-    color:#adadad;
-    font-size: 10px;
-}
-#regi{
-    color:#C8242F;
-    font-size: 10px;
-}
-.a3{
-    position: relative;
-    top:8px;
-    text-decoration: none;
-}
-#bod{
-    background-color: #FAFAFA;
-}
-#btn{
+.button{
+    top: 527px;
+    left: 906px;
+    width: 180%;
+    height: 45px;
     background: #C8242F 0% 0% no-repeat padding-box;
+    color: #FAFAFA;
     border-radius: 23px;
-    width: 90px;
-    color:#FFFFFF;
-    border: none;
-    padding-left:15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 10px;
+    opacity: 1;
+}
+.forgotpass{
+    margin-left:154px;
+    color:#ADADAD;
+}
+#txt{
+    color:#ADADAD;
 }
