@@ -5,324 +5,283 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/responsiveInnerpage.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="./css/responsiveInnerpage.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div>
-        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #ffffff;">
+<body style="background: #FAFAFA;">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg " style="background-color: white;">
             <div class="container-fluid">
-                <img src="./images/menu-bar.svg" alt="logo" class="dashboard-toggle-logo">
-                <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="logo" class="dashboard-web-logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span><img src="./images/menu-bar.svg" alt="logo"></span>
+                <img  id="toggalbtn" src="./images/menu-bar.svg" class="mx-3">
+                <img src="./images/header-logo.svg" class="me-4">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <img class="offcanvas-title" id="offcanvasNavbarLabel"
-                            src="./images/mobile-header-logo.svg"></img>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-start flex-grow-1">
-                            <li class="nav-item d-flex align-items-center dashboard-search-toggle">
-                                <img src="./images/search-icon.svg" alt="" class="dashboard-search-icon">
-                                <div class="searchspace">
-                                    <input type="search" class="form-control rounded searchbar" placeholder="Search"
-                                        aria-label="Search" aria-describedby="search-addon" />
-                                </div>
-                            </li>
-                        </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <form class="d-flex" role="search">
+                            <img src="./images/search-icon.svg" style="height:20px;" class="mt-2">
+                            <input class="form-control me-2 border-0" type="search" placeholder="Search" font-family:
+                                Roboto; aria-label="Search">
+                        </form>
 
-                        <ul class="navbar-nav justify-content-end dashboard-nav-sidebar-toggle">
-                            <li class="nav-item d-flex align-items-center">
-                                <div class="sidebar-detail d-flex">
-                                    <img src="./images/dashboard-active.svg" alt="" class="dashboard-active sidebarimg">
-                                    <div class="">Dashboard</div>
-                                </div>
-                            </li>
-                            <li class="nav-item d-flex dashbord-sidebar-detail dashboard-active-tab align-items-center">
-                                <div class="sidebar-detail d-flex">
-                                    <img src="./images/graph-active.svg" alt="" class="graph-default sidebarimg ">
-                                    <div class="">Analysis</div>
-                                </div>
-                            </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <div class="sidebar-detail d-flex">
-                                    <img src="./images/inbox-default.svg" alt="" class="inbox-default sidebarimg ">
-                                    <div class="">Inbox</div>
-                                </div>
-                            </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <div class="sidebar-detail d-flex">
-                                    <img src="./images/clock-default.svg" alt="" class="clock-default sidebarimg ">
-                                    <div class="">History</div>
-                                </div>
-                            </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <div class="sidebar-detail d-flex">
-                                    <img src="./images/user-default.svg" alt="" class="user-default sidebarimg ">
-                                    <div class="">Users</div>
-                                </div>
-                            </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <div class="sidebar-detail d-flex">
-                                    <img src="./images/maintenance-default.svg" alt=""
-                                        class="maintenance-default sidebarimg ">
-                                    <div class="">Maintenance</div>
-                                </div>
-                            </li>
-                            <li class="nav-item d-flex align-items-center">
-                                <div class="sidebar-detail d-flex">
-                                    <img src="./images/setting-default.svg" alt="" class="setting-default sidebarimg ">
-                                    <div class="">Setting</div>
-                                </div>
-                            </li>
-                        </ul>
+                    </ul>
+                    <div class="d-flex">
+                        <i class="me-4 my-auto">
+                            <img src="./images/notification-icon.svg">
+                        </i>
+                        <img src="./images/profile.png ">
+                        <div class="dropdown mx-3 my-auto">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" font-family: Roboto;>
+                                John Doe
+                            </a>
 
-                        <ul class="navbar-nav justify-content-end">
-                            <li class="nav-item d-flex align-items-center">
-                                <img src="./images/notification-icon.svg" alt="" class="dashboard-notification-icon">
-                                <img src="./images/profile.png" alt="" class="dashboard-profile-icon">
-                                <div>John Doe</div>
-                                <img src="./images/downward-arrow.svg" alt="" class="dashboard-select-downward">
-                            </li>
-                        </ul>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another </a></li>
+                                <li><a class="dropdown-item" href="#">Something </a></li>
+                            </ul>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </nav>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 d-2 d-xl-block d-xxl-block justify-content-center align-items-center" id="sidebarxyz">
 
-        <div class="container-fluid well" id="home" style="display:block; padding-top:60px;">
-            <div class="row">
-                <div class="col-lg-2 dashboard-sidebar-toggle">
-                    <div class="sidebar">
-                        <div class="sidebar-detail d-flex">
-                            <img src="./images/dashboard-active.svg" alt="" class="dashboard-active sidebarimg">
-                            <div class="">Dashboard</div>
-                        </div>
-                        <div class="sidebar-detail dashbord-sidebar-detail dashboard-active-tab d-flex">
-                            <img src="./images/graph-active.svg" alt="" class="graph-default sidebarimg ">
-                            <div class="">Analysis</div>
-                        </div>
-                        <div class="sidebar-detail d-flex">
-                            <img src="./images/inbox-default.svg" alt="" class="inbox-default sidebarimg ">
-                            <div class="">Inbox</div>
-                        </div>
-                        <div class="sidebar-detail d-flex">
-                            <img src="./images/clock-default.svg" alt="" class="clock-default sidebarimg ">
-                            <div class="">History</div>
-                        </div>
-                        <div class="sidebar-detail d-flex">
-                            <img src="./images/user-default.svg" alt="" class="user-default sidebarimg ">
-                            <div class="">Users</div>
-                        </div>
-                        <div class="sidebar-detail d-flex">
-                            <img src="./images/maintenance-default.svg" alt="" class="maintenance-default sidebarimg ">
-                            <div class="">Maintenance</div>
-                        </div>
-                        <div class="sidebar-detail d-flex">
-                            <img src="./images/setting-default.svg" alt="" class="setting-default sidebarimg ">
-                            <div class="">Setting</div>
+                <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white " style="height: 100%;">
+                    <div class="position-sticky">
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action py-2 ripple border-0 mt-3"
+                                aria-current="true">
+                                <i class="fas fa-tachometer-alt fa-fw me-3">
+                                </i>
+                                <img src="./images/dashboard-default.svg" alt="Dashboard"
+                                    style="height: 20px;width: 20px;">
+                                <span style="font-family: Roboto;">Dashboard</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action py-2 ripple border-0 mt-2" style="background-color: #FFF3F4;">
+                                <i class="fas fa-chart-area fa-fw me-3"></i>
+                                <img src="./images/graph-active.svg" alt="Dashboard" style="height: 20px;width: 20px;">
+                                <span style="font-family: Roboto; color: #C8242F;">Analysis</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action py-2 ripple border-0 mt-2"><i
+                                    class="fas fa-lock fa-fw me-3"></i>
+                                <img src="./images/inbox-default.svg" alt="Dashboard" style="height: 20px;width: 20px;">
+                                <span style="font-family: Roboto;">Inbox</span></a>
+                            <a href="#" class="list-group-item list-group-item-action py-2 ripple border-0 mt-2"><i
+                                    class="fas fa-chart-line fa-fw me-3"></i>
+                                <img src="./images/clock-default.svg" alt="Dashboard" style="height: 20px;width: 20px;">
+                                <span style="font-family: Roboto;">History</span></a>
+                            <a href="#" class="list-group-item list-group-item-action py-2 ripple border-0 mt-2">
+                                <i class="fas fa-chart-pie fa-fw me-3"></i>
+                                <img src="./images/maintenance-default.svg" alt="Dashboard"
+                                    style="height: 20px;width: 20px;">
+                                <span>Maintenance</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action py-2 ripple border-0 mt-2"><i
+                                    class="fas fa-chart-bar fa-fw me-3"></i>
+                                <img src="./images/setting-default.svg" alt="Dashboard"
+                                    style="height: 20px;width: 20px;">
+                                <span style="font-family: Roboto;">Setting</span>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-10 col-12 mt-4 mainbody">
-                    <div class="container-fluid row">
-                        <div class="anaysis mt-3 fs-3">
-                            Analysis
-                        </div>
-                        <div class="formelement col-lg-12 col-md-12 col-sm-12 ms-3 mt-3">
-                            <p class="oneclmn fs-5 mt-4">One Column</p>
-                            <input class="form-control username" type="text" placeholder="Name">
-                            <select class="form-control-md dropdown" id="dropdown">
-                                <option>Dropdown</option>
-                                <option>a</option>
-                                <option>b</option>
-                                <option>c</option>
-                                <option>d</option>
-                            </select>
-                            <textarea class="textarea" id="textarea" rows="3" placeholder="Multiple Lines"></textarea>
-                            <p class="oneclmn fs-5 mt-3">Two Column</p>
-                            <div class="twoclmn col-lg-12 col-md-12 col-sm-12">
-                                <div class="firsttwoclmn row col-lg-12 col-md-12 col-sm-12">
-                                    <div class="left2name col-lg-5 col-md-5 col-sm-12 ms-5">
-                                        <input type="text" class="name1" id="name1" placeholder="Name" />
-                                    </div>
-                                    <div class="legend2right col-lg-5 col-md-5 col-sm-12 ms-3">
-                                        <fieldset>
-                                            <legend><span class="legendname">Username</span></legend>
-                                            <p class="fs-7">johndoe</p>
-                                        </fieldset>
-                                    </div>
-                                </div>
-                                <div class="last2clmn row col-lg-12 col-md-12 col-sm-12">
-                                    <div class="left2name col-lg-5 col-md-5 col-sm-12 ms-5 mt-3">
-                                        <input type="text" class="name1" id="name1" placeholder="Name" />
-                                    </div>
-                                    <div class="left2name col-lg-5 col-md-5 col-sm-12 ms-3 mt-2">
-                                        <select class="form-control-md dropdown2clmn" id="dropdown2clmn">
-                                            <option>Dropdown</option>
-                                            <option>a</option>
-                                            <option>b</option>
-                                            <option>c</option>
-                                            <option>d</option>
-                                        </select>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <p class="oneclmn fs-5 mt-4">Three Column</p>
-                            <div class="threeclmn row col-lg-12 col-md-12 col-sm-12 mt-4">
-                                <div class="threeclmn1 col-lg-4 col-md-4 col-sm-12">
-                                    <fieldset id="focus">
-                                        <legend><span class="legendname">Focus</span></legend>
-                                        |
-                                    </fieldset>
-                                </div>
-                                <div class="threeclmn2 col-lg-4 col-md-4 col-sm-12">
-                                    <fieldset id="pwd">
-                                        <legend><span class="legendname">Password</span></legend>
-                                        <label class="circle">......</label>
-                                    </fieldset>
-                                </div>
-                                <div class="threeclmn3 col-lg-4 col-md-4  col-sm-12">
-                                    <fieldset id="dotted">
-                                        <legend><span class="legendname">Disabled</span></legend>
-                                        johndoe
-                                    </fieldset>
-                                </div>
-
-                            </div>
-                            <p class="oneclmn fs-5 mt-4">Four Column</p>
-
-                            <div class="fourclmn row col-lg-12 col-md-12 col-sm-12">
-                                <div class="threeclmn1 col-lg-3 col-md-6 col-sm-12 mt-4">
-                                    <fieldset id="desg">
-                                        <legend><span class="legendname" style="color: red;">Designation</span></legend>
-                                        UI Designer6
-                                    </fieldset>
-                                </div>
-                                <div class="threeclmn2 col-lg-3 col-md-6 col-sm-12 mt-4">
-                                    <input type="text" class="fourcolumn2" id="fourcolumn2" placeholder="Name" />
-                                </div>
-                                <div class="threeclmn3 col-lg-3 col-md-6  col-sm-12 mt-4">
-                                    <fieldset>
-                                        <legend><span class="legendname">Username</span></legend>
-                                        johndoe
-                                    </fieldset>
-                                </div>
-                                <div class="left2name col-lg-3 col-md-6 col-sm-12 mt-4">
-                                    <select class="form-control-md dropdown4clmn" id="dropdown4clmn">
-                                        <option>Dropdown</option>
-                                        <option>a</option>
-                                        <option>b</option>
-                                        <option>c</option>
-                                        <option>d</option>
-                                    </select>
-                                </div>
-
-
-                            </div>
-                            <p class="oneclmn fs-4 mt-5">Other Design Elements</p>
-                            <p class="oneclmn fs-5 mt-4"> File Upload</p>
-                            <div class="file-upload">
-                                <div class="upload ">
-                                    <div class="uploadbtn">
-                                        <img src="images/cloud-upload-icon.svg" class="uploadimg">
-                                        <p class="uploadtxt">Upload</p>
-                                    </div>
-                                    <p class="noitemselect">No item Selected</p>
-                                </div>
-                            </div>
-                            <p class="oneclmn fs-5 mt-4">Radio Button</p>
-
-                            <input type="radio" class="btn1" name="btn"><span>option1</span>
-                            <input type="radio" class="btn1 ms-3" name="btn" value="checked"><span>option2</span>
-                            <h4 class="oneclmn fs-5 mt-4 mb-3">Checkbox</h4>
-                            <input type="checkbox" name="check1" class="btn1"><span>option1</span>
-                            <input type="checkbox" name="check2" class="btn1 ms-3"><span>option2</span>
-                            <p class="oneclmn fs-5 mt-4">
-                                Snackbar
-                            </p>
-                            <div class="row container mt-0">
-                                <div class="first2 d-flex row">
-                                    <div class="err col-lg-5 col-md-5 col-sm-12">
-                                        <img src="images/error-icon.svg" class="snackimg">
-                                        <p class="errtxt">
-                                            This is an error message
-                                        </p>
-                                    </div>
-                                    <div class="info col-lg-5 col-md-5 col-sm-12 ms-5">
-                                        <img src="images/info-icon.svg" class="snackimg">
-                                        <p class="infotxt">
-                                            This is an info message
-                                        </p>
-
-                                    </div>
-                                </div>
-                                <div class="last2 row">
-                                    <div class="warning col-lg-5 col-md-5 col-sm-12">
-                                        <img src="images/warning-icon.svg" class="snackimg">
-                                        <p class="warntxt">
-                                            This is a warning message
-                                        </p>
-
-                                    </div>
-                                    <div class="succ col-lg-5 col-md-5 col-sm-12 ms-5">
-                                        <img src="images/success-icon.svg" class="snackimg">
-                                        <p class="succtxt">
-                                            This is a success message
-                                        </p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                            <p class="oneclmn fs-5 mt-4">
-                                Call to action
-                            </p>
-                            <div class="calltoaction">
-                                <button class="primary">Primary</button>
-                                <button class="secondary">Secondary</button>
-                            </div>
-                            <p class="oneclmn fs-5 mt-4">
-                                Tabs
-                            </p>
-                            <div class="tabs">
-                                <ul class="ul">
-                                    <li class="li">Tab1</li>
-                                    <li class="li">Tab2</li>
-                                    <li class="li">Tab3</li>
-                                    <span class="underline"></span>
-                                </ul>
-        
-                                <p class="tabtxt">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing                        </p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
+                </nav>
 
             </div>
+
+            <div class="col-lg-10 col-sm-12 " id="mainContent">
+                <h2 class="p-3 mt-4" style="font-family: Roboto; font-weight: bold;">Analysis</h2>
+                <div class="col-lg-11 ms-3 me-3">
+                    <div class="card border-0">
+                        <div class="card-body d-flex justify-content-center align-content-center">
+                            
+                            <form action="">
+                                <h5 class="p-3 mt-2" style="font-family: Roboto; font-weight: bold;">One Column</h5>
+                                <input class="p-3 ms-3" id="username" name="Name" type="text" placeholder="Name">
+                                <select id="dropdown" class="form-select mt-3 ms-3" aria-label="Default select example">
+                                    <option selected><span class="opacity-25">Dropdown</span></option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <textarea class="form-control p-3 mt-3 ms-3" name="Multiple line" id="Textarea1"
+                                    placeholder="Multiple Line"></textarea>
+                                <h5 class="p-3 mt-4" style="font-family: Roboto; font-weight: bold;">Two Column</h5>
+                                <div class="row ">
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <input class="p-3 ms-3 me-3" id="username" name="Name" type="text"
+                                            placeholder="Name">
+                                    </div>
+                                    
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <input class="mt-0 p-3 mt-lg-0 mt-md-3 mt-sm-3 ms-md-3 ms-sm-3" id="username" name="Name" type="text" placeholder="Userame">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <input class="p-3 ms-3 mt-3" id="username" name="Name" type="password"
+                                            placeholder="Password">
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <select id="dropdown" class="form-select mt-3 ms-md-3 ms-sm-3"
+                                            aria-label="Default select example">
+                                            <option selected><span class="opacity-25">Dropdown</span></option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <h5 class="p-3 mt-4" style="font-family: Roboto; font-weight: bold;">Three Column</h5>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-12 col-sm-12">
+                                        <input class="p-3 ms-3 " id="username" name="Name" type="text"
+                                            placeholder="Name">
+                                    </div>
+                                    <div class="col-lg-4 col-md-12 col-sm-12">
+                                        <input class="p-3 mt-lg-0  ms-md-3 ms-sm-3 mt-md-3 mt-sm-3" id="username" name="Name" type="text" placeholder="Name">
+                                    </div>
+                                    <div class="col-lg-4 col-md-12 col-sm-12">
+                                        <input class="p-3 mt-lg-0 ms-md-3 ms-sm-3 mt-md-3 mt-sm-3" id="username1" name="Name" type="text" placeholder="Name">
+                                    </div>
+                                </div>
+                                <h5 class="p-3 mt-4" style="font-family: Roboto; font-weight: bold;">Four Column</h5>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-12 col-sm-12">
+                                        <input class="p-3 ms-3 " id="username" name="Name" type="text"
+                                            placeholder="Name">
+                                    </div>
+                                    <div class="col-lg-3 col-md-12 col-sm-12">
+                                        <input class="p-3 mt-lg-0 ms-md-3 ms-sm-3 mt-md-3 mt-sm-3" id="username" name="Name" type="text" placeholder="Name">
+                                    </div>
+                                    <div class="col-lg-3 col-md-12 col-sm-12">
+                                        <input class="p-3 mt-lg-0 ms-md-3 ms-sm-3 mt-md-3 mt-sm-3" id="username" name="Name" type="text" placeholder="Name">
+                                    </div>
+                                    <div class="col-lg-3 col-md-12 col-sm-12">
+                                        <select id="dropdown" class="form-select mt-lg-0 ms-md-3 ms-sm-3 mt-md-3 mt-sm-3" aria-label="Default select example">
+                                            <option selected><span class="opacity-25">Select</span></option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <h5 class="p-3 mt-4" style="font-family: Roboto; font-weight: bold;">Other Design
+                                    Elements</h5>
+                                <h6 class="ms-3" style="font-family: Roboto; font-weight: bold;">File Upload</h6>
+                                <div class="d-flex">
+                                    <button type="button" class="button mt-4 ms-3">
+                                        <div>
+                                            <img src="./images/cloud-upload-icon.svg" alt="">
+                                            <span class="ms-2 upd">Upload</span>
+                                        </div>
+                                    </button>
+                                    <span class="mt-4 ms-4 p-2 opacity-50" style="font-size: smaller;">No iteams
+                                        Selected</span>
+                                </div>
+                                <h6 class="ms-3 mt-5" style="font-family: Roboto; font-weight: bold;">Radio Button</h6>
+                                <input type="radio" name="radio" value="option1" class="ms-3 mt-3 btncolor">
+                                <label for="option1">Option 1</label>
+                                <input type="radio" name="radio" value="option2" class="ms-3 mt-3 btncolor">
+                                <label for="option2">Option 2</label>
+
+                                <h6 class="ms-3 mt-5" style="font-family: Roboto; font-weight: bold;">Check Box</h6>
+                                <input type="checkbox" name="check1" value="option1" class="ms-3 mt-3 btncolor">
+                                <label for="option1">Option 1</label>
+                                <input type="checkbox" name="check2" value="option2" class="ms-3 mt-3 btncolor">
+                                <label for="option2">Option 2</label>
+
+                                <h6 class="ms-3 mt-5" style="font-family: Roboto; font-weight: bold;">Snackbar</h6>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <div class="ms-3 mt-4 row d-flex align-content-center" id="error">
+                                            <img src="./images/error-icon.svg" alt="" class="img-fluid col-1">
+                                            <span class="col-11">This is error message</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 mt-4 col-sm-12">
+                                        <div class=" ms-3 row d-flex align-content-center" id="info">
+                                            <img src="./images/info-icon.svg" alt="" class="img-fluid col-1">
+                                            <span class="col-11">This is an information message!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12 mt-4 col-sm-12 ">
+                                        <div class="ms-3 row  d-flex align-content-center" id="war">
+                                            <img src="./images/warning-icon.svg" alt="" class="img-fluid col-1">
+                                            <span class="col-11">This is a warning message</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 mt-4 col-sm-12">
+                                        <div class="ms-3 row d-flex align-content-center" id="succe">
+                                            <img src="./images/success-icon.svg" alt="" class="img-fluid col-1">
+                                            <span class="col-11">this is a Success message</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6 class="ms-3 mt-5" style="font-family: Roboto; font-weight: bold;">Call to action</h6>
+                                <div class="d-flex ms-0">
+                                    
+                                        <button type="button" class="button1 mt-4 border-0 ms-md-3 ms-sm-3">Primary</button>
+                                        <button type="button" class="button2 ms-3 mt-4">Secondary</button>
+
+                                </div>
+                                <h6 class="ms-3 mt-5" style="font-family: Roboto; font-weight: bold;">Tabs</h6>
+                                    <div class="d-flex">
+                                        <p class="mt-3 ms-3 mb-0" style="font-family:Roboto">
+                                            <span
+                                                style="color:  #C8242F; text-underline-offset: 9px; "><u>Tab1</u></span>
+                                        </p>
+                                        <p class="mt-3 ms-3 mb-0" style="font-family:Roboto">
+                                            <span style="opacity: 50%;">Tab2</span>
+                                        </p>
+                                        <p class="mt-3 ms-3 mb-0" style="font-family:Roboto">
+                                            <span style="opacity: 50%;">Tab3</span>
+                                        </p>
+                                    </div>
+                                    <hr class="style1 p-0 m-0 mt-1 ms-3">
+                                    <p class="ms-3 mt-4 mb-5">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                    </p>
+                                    
+                            </form>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
         </div>
     </div>
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    <script src="./js/custom.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+
 
 </body>
 
